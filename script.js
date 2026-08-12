@@ -11,12 +11,16 @@
   let searchTerm = "";
 
   function cardTemplate(ext) {
+    const no = String(ext.no).padStart(2, "0");
     return `
       <a class="card" data-category="${ext.category}" href="articles/${ext.id}.html">
         <div class="card-top">
           <span class="card-icon card-icon-fallback" data-icon-fallback aria-hidden="true">${ext.name.charAt(0)}</span>
           <img class="card-icon" src="${ext.icon}" alt="" width="40" height="40" loading="lazy" data-icon-img hidden>
-          <span class="card-tag">${CATEGORY_LABELS[ext.category]}</span>
+          <div class="card-meta">
+            <span class="card-no">No.${no}</span>
+            <span class="card-tag">${CATEGORY_LABELS[ext.category]}</span>
+          </div>
         </div>
         <h3 class="card-name">${ext.name}</h3>
         <p class="card-tagline">${ext.tagline}</p>
