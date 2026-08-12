@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日本語AI議事録アシスト — 和風ツール工房</title>
+<meta name="description" content="リアルタイム音声認識で文字起こしし、日本語特有の「建前」を読み解いて要約する。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%231F4E79%22/><circle cx=%2250%22 cy=%2250%22 r=%2224%22 fill=%22none%22 stroke=%22%23FDFCFA%22 stroke-width=%226%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </span>
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+    </a>
+
+    <nav class="site-nav" aria-label="サイト内ナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="article-wrap">
+    <p class="breadcrumb"><a href="../index.html#catalog">&larr; 道具一覧に戻る</a></p>
+
+    <article>
+      <div class="article-hero">
+        <div class="article-icon-row">
+          <img class="article-icon" src="../assets/icons/ext09.png" alt="" width="48" height="48">
+          <span class="article-tag">集中・生産性</span>
+        </div>
+        <h1 class="article-title">日本語AI議事録アシスト</h1>
+        <p class="article-tagline">曖昧な会話から決定事項だけを抽出</p>
+        <img class="article-hero-image" src="../assets/hero/ext09.png" alt="日本語AI議事録アシストのスクリーンショット" loading="lazy">
+
+        <div class="article-cta">
+          <p class="article-cta-text"><strong>14日間無料</strong>ですべての機能をお試しいただけます。</p>
+          <span class="article-cta-price">単品 ¥1,980 / 全部セット ¥3,980</span>
+        </div>
+        <a class="article-download-link" href="../downloads/ext09.zip" download>&darr; 拡張機能ファイル一式をダウンロード(zip)</a>
+        <p class="article-download-note">zipを解凍し、Chromeの「拡張機能」→「デベロッパーモード」→「パッケージ化されていない拡張機能を読み込む」からフォルダを選択してください。</p>
+      </div>
+
+      <div class="article-body">
+<p>会議の曖昧な会話から決定事項を抽出！「日本語AI議事録アシスト」の活用法</p>
+<p>会議が終わった後、「今日の会議、結局何が決まったんだっけ？」「次は何をすればいい？」と分からなくなってしまった経験はありませんか？また、議事録を作成するのに何時間もかかってしまうのは非効率的です。 そこでおすすめなのが、Web会議の音声をリアルタイムで文字起こしし、さらに要約議事録を作成するChrome拡張機能「<strong>日本語AI議事録アシスト</strong>」です。</p>
+<p>会話に含まれる日本語独特の「建前」や「曖昧な表現」から、真の結論とタスクを抽出することに特化しています。</p>
+<h3>主な特徴</h3>
+<ol><li><strong>Web Speech APIによる高精度文字起こし</strong>： Chrome標準の音声認識機能を使用し、完全にローカル環境（オフライン）でマイク音声をリアルタイムテキスト化します。</li><li><strong>建前・本音変換エンジン</strong>： 会議中の「前向きに検討します（＝見送る）」「持ち帰って相談します（＝却下または時間稼ぎ）」といった曖昧フレーズをスキャンし、その本音（真意）と取るべき対策を対照表で表示します。</li><li><strong>自動Markdown議事録生成</strong>： 会議のタイトル、参加者、決定事項、そしてチェックボックス形式の「To-Do（次アクション）」を整理した議事録を自動生成します。</li></ol>
+<h3>使い方・操作手順</h3>
+<ol><li>会議の開始と同時に、ポップアップ画面を開きます。</li><li>「<strong>文字起こし開始</strong>」ボタン（マイクアイコン）をクリックします。マイクに向かって話した内容が、話者ごとにチャットログとして書き出されます。（※マイクがない場合は「デモ再生」で動作テストが可能です）。</li><li>話者が変わる際は、ポップアップの「<strong>話者A/B</strong>」のボタンを押して、ログの発言者を切り替えることができます。</li><li>会議終了後、「<strong>AI議事録を作成する</strong>」ボタンをクリックします。</li><li>要約されたMarkdownテキストが表示されます。必要に応じて「建前 vs 本音」タブで隠れた本音をチェックします。</li><li>「<strong>Markdownコピー</strong>」を押し、メールや社内共有ツール（Notion、Teams等）に貼り付けて共有します。</li><li>「<strong>履歴に保存</strong>」を押せば、次回以降も過去履歴タブからいつでも内容を確認できます。</li></ol>
+      </div>
+
+      <div class="article-footer-cta">
+        <h2>日本語AI議事録アシストを試してみる</h2>
+        <p>インストールから14日間、全機能を無料でご利用いただけます。継続利用には単品¥1,980または全51個が使える全部セット¥3,980が必要です。</p>
+        <span class="price-card-cta price-card-cta--pending">Lemon Squeezy登録準備中</span>
+      </div>
+    </article>
+
+    <a class="article-back-link" href="../index.html#catalog">&larr; 道具一覧に戻る</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+      <p class="footer-note">本サイトは51個のChrome拡張機能の紹介と、Lemon Squeezyでの商品登録に向けた準備のために制作しています。掲載中の紹介文は元資料を要約整形したものです。価格・利用条件は変更される場合があります。</p>
+    </div>
+
+    <nav class="footer-links" aria-label="フッターナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 和風ツール工房 — Lemon Squeezy登録準備中</p>
+  </div>
+</footer>
+
+</body>
+</html>

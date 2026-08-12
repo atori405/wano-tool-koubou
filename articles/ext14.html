@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>スケジュールの横窓 — 和風ツール工房</title>
+<meta name="description" content="Googleカレンダー等の予定を、和風の障子UIでブラウザの端に表示し続ける。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%231F4E79%22/><circle cx=%2250%22 cy=%2250%22 r=%2224%22 fill=%22none%22 stroke=%22%23FDFCFA%22 stroke-width=%226%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </span>
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+    </a>
+
+    <nav class="site-nav" aria-label="サイト内ナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="article-wrap">
+    <p class="breadcrumb"><a href="../index.html#catalog">&larr; 道具一覧に戻る</a></p>
+
+    <article>
+      <div class="article-hero">
+        <div class="article-icon-row">
+          <img class="article-icon" src="../assets/icons/ext14.png" alt="" width="48" height="48">
+          <span class="article-tag">集中・生産性</span>
+        </div>
+        <h1 class="article-title">スケジュールの横窓</h1>
+        <p class="article-tagline">ページ遷移せず予定をサイドバーに常駐</p>
+        <img class="article-hero-image" src="../assets/hero/ext14.png" alt="スケジュールの横窓のスクリーンショット" loading="lazy">
+
+        <div class="article-cta">
+          <p class="article-cta-text"><strong>14日間無料</strong>ですべての機能をお試しいただけます。</p>
+          <span class="article-cta-price">単品 ¥1,980 / 全部セット ¥3,980</span>
+        </div>
+        <a class="article-download-link" href="../downloads/ext14.zip" download>&darr; 拡張機能ファイル一式をダウンロード(zip)</a>
+        <p class="article-download-note">zipを解凍し、Chromeの「拡張機能」→「デベロッパーモード」→「パッケージ化されていない拡張機能を読み込む」からフォルダを選択してください。</p>
+      </div>
+
+      <div class="article-body">
+<p>【常駐スケジュール】ページ遷移せず予定を確認！サイドバーに和風障子UIで常駐する「<strong>スケジュールの横窓</strong>」の使い方</p>
+<p>ブラウザで作業をしているとき、カレンダーアプリを別タブで開いて今日の予定を確認し、また作業に戻る…という動作を何度も繰り返していませんか？ タブの切り替えやページ遷移をせずに、ブラウザの端へ今日の予定をサッと常駐させておけるのが、Chrome拡張機能「<strong>スケジュールの横窓</strong>」です。 和風の「障子」が開く美しいアニメーションと、時間帯によって背景グラデーションが移り変わるタイムライン機能を備え、予定のチェックやお鈴（おりん）・木魚のサウンドで心地よく予定管理が行えます。</p>
+<h3>主な特徴</h3>
+<ol><li><strong>ブラウザ一体型のサイドバー常駐（Side Panel API）</strong>： ブラウザのネイティブサイドパネル領域を使用するため、閲覧しているWebサイトのレイアウトを一切崩さずに、今日の予定を常に画面右側に固定できます。</li><li><strong>障子風スライド開閉UI ＆ 時間帯グラデーション</strong>： サイドバーを開くと障子の格子戸が左右に「スッ」とスライドして開きます。また、朝（爽やかな水色）、昼（温かみのある陽光色）、夕方（茜色）、夜（月夜紺・ダークモード）へと、時間帯によって背景が自動で優雅に移り変わります。</li><li><strong>iCal（ICS URL）インポート同期</strong>： GoogleカレンダーやiCloudカレンダーなどの非公開のiCal形式アドレス（.icsの公開URL）を設定することで、外部カレンダーの今日の予定を自動同期してタイムラインに反映できます。</li><li><strong>木魚 ＆ おりん（Web Audio API）の快適サウンド</strong>： 予定を登録するときは木魚の「ポクッ」という心地よい打音、予定を完了チェックしたときはお鈴の「チーン…」という澄んだ高音が響き渡り、生産性を高めます。</li></ol>
+<h3>使い方・操作手順</h3>
+<ol><li>拡張機能アイコンをクリックすると、ブラウザの右側にサイドパネル「<strong>スケジュールの横窓</strong>」が開きます。</li><li>開くと同時に障子が左右にスライドして開き、今日の年月日（和暦・西暦）と現在の時間が表示されます。</li><li>タイムライン上には、本日の予定が時間帯に沿ってカード表示されます。</li><li>予定の左側にあるチェックボックスをクリックすると、お鈴の音が響き渡り、予定のタイトルに「墨で引いたような打ち消し線」が入って完了状態になります。</li><li>下部の「<strong>予定を追加</strong>」をクリックすると、引き出しを引くようにフォームが現れ、新規予定（題名、開始・終了時刻、メモ）を差し込むことができます。登録すると木魚の音が鳴り、タイムラインに自動ソートして保存されます。</li><li>「<strong>カレンダー連携</strong>」をクリックすると、iCal（.ics）の同期用URLの入力画面が開きます。ネット環境がない場合や動作テストを行いたい場合は、「<strong>ダミー予定を読込</strong>」をクリックすることで、一瞬で今日のサンプルカレンダーデータをタイムラインに同期・表示させることができます。</li></ol>
+      </div>
+
+      <div class="article-footer-cta">
+        <h2>スケジュールの横窓を試してみる</h2>
+        <p>インストールから14日間、全機能を無料でご利用いただけます。継続利用には単品¥1,980または全51個が使える全部セット¥3,980が必要です。</p>
+        <span class="price-card-cta price-card-cta--pending">Lemon Squeezy登録準備中</span>
+      </div>
+    </article>
+
+    <a class="article-back-link" href="../index.html#catalog">&larr; 道具一覧に戻る</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+      <p class="footer-note">本サイトは51個のChrome拡張機能の紹介と、Lemon Squeezyでの商品登録に向けた準備のために制作しています。掲載中の紹介文は元資料を要約整形したものです。価格・利用条件は変更される場合があります。</p>
+    </div>
+
+    <nav class="footer-links" aria-label="フッターナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 和風ツール工房 — Lemon Squeezy登録準備中</p>
+  </div>
+</footer>
+
+</body>
+</html>

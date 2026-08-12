@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日本の伝統色ピッカー — 和風ツール工房</title>
+<meta name="description" content="スポイトで取得した色に最も近い日本の伝統色名と、由来やカラーコードを表示する。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%231F4E79%22/><circle cx=%2250%22 cy=%2250%22 r=%2224%22 fill=%22none%22 stroke=%22%23FDFCFA%22 stroke-width=%226%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </span>
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+    </a>
+
+    <nav class="site-nav" aria-label="サイト内ナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="article-wrap">
+    <p class="breadcrumb"><a href="../index.html#catalog">&larr; 道具一覧に戻る</a></p>
+
+    <article>
+      <div class="article-hero">
+        <div class="article-icon-row">
+          <img class="article-icon" src="../assets/icons/ext40.png" alt="" width="48" height="48">
+          <span class="article-tag">和風デザイン</span>
+        </div>
+        <h1 class="article-title">日本の伝統色ピッカー</h1>
+        <p class="article-tagline">抽出した色を伝統色の名前とコードに変換</p>
+        <img class="article-hero-image" src="../assets/hero/ext40.png" alt="日本の伝統色ピッカーのスクリーンショット" loading="lazy">
+
+        <div class="article-cta">
+          <p class="article-cta-text"><strong>14日間無料</strong>ですべての機能をお試しいただけます。</p>
+          <span class="article-cta-price">単品 ¥1,980 / 全部セット ¥3,980</span>
+        </div>
+        <a class="article-download-link" href="../downloads/ext40.zip" download>&darr; 拡張機能ファイル一式をダウンロード(zip)</a>
+        <p class="article-download-note">zipを解凍し、Chromeの「拡張機能」→「デベロッパーモード」→「パッケージ化されていない拡張機能を読み込む」からフォルダを選択してください。</p>
+      </div>
+
+      <div class="article-body">
+<h3>1. Webサイトや画像で見つけた「あの絶妙な美しい色」の名前やコードが分からず困っていませんか？</h3>
+<h4>1-1. 「このWebサイトの背景に使われている綺麗な和風の赤色、なんて名前の色なんだろう？」というモヤモヤ</h4>
+<p>「センスの良いWebサイト、美しい風景の写真、和風のバナー広告。画面で見かけた深みのある絶妙な赤色や、落ち着いた緑色。『この色を自分の資料やデザインでも使いたい！』と思ったけれど、色名もカラーコード（#HEX）も分からない…」 クリエイター、デザイナー、資料作成をするビジネスパーソンなら、誰しも画面上の「美しい色」に心を惹かれた経験があるはずです。 しかし、Web上の色の多くは単なるカラーコード（#E60033など）として処理されており、それが日本の伝統文化で何と呼ばれる色（例: 躑躅色、茜色）なのか、どんな色彩ストーリーを持つのかを知る術はありませんでした。</p>
+<h4>1-2. デベロッパーツールを開いたりスクショを撮ってペイントソフトで調べる面倒くささ</h4>
+<p>Webサイトの要素の色を調べるために、ブラウザのデベロッパーツール（F12）を開いて複雑なCSSコードを探し回ったり、わざわざスクリーンショットを撮影してペイントソフトやPhotoshopに読み込ませ、スポイトツールで抽出する…という作業は非常に手間がかかり、直感的ではありません。 直感的に「今、目の前にあるこの色」をその場でサッと取得して、自分のデザインワークに活かしたいというニーズに応える快適なツールが求められていました。</p>
+<h4>1-3. 画面上のあらゆるピクセルからワンタップ抽出 ＆ 伝統色名・カラーコードを全自動判定</h4>
+<p>「日本の伝統色ピッカー」は、そんな色彩にこだわるすべてのクリエイターのための、感性刺激＆カラー抽出Chrome拡張機能です。 モチーフにしたのは、絵の具や草木染めの色彩を記録した日本の伝統的な「色見本帳（いろみほんちょう）」。 ブラウザ画面上のあらゆる場所をルーペスポイトで1クリックするだけで、HEX・RGB・HSLカラーコードを即座に取得。さらに、数千年の歴史を持つ日本の伝統色データベースと照合し、最も近い「和の伝統色名（例: 茜色、瑠璃色、利休鼠等）」と読み方を情緒豊かに教えてくれます。</p>
+<h3>2. 使った人だけが実感する、色を集めてデザインを創る圧倒的な楽しさ</h3>
+<h4>2-1. 1ピクセル単位で正確に欲しい色をキャッチする「精密ズームルーペスポイト」</h4>
+<p>スポイトツールを起動すると、カーソル周辺が円形のズームルーペで拡大表示。細かい文字の1ドットや、画像の中の微妙なグラデーションの1ピクセルまで逃さずピンポイントで抽出できます。</p>
+<h4>2-2. 300種類以上の「日本の伝統色データベース」との高精度自動マッチング</h4>
+<p>取得したRGB値から、色彩工学に基づいた色差計算（CIE Delta E）を実行。最も色合いが近い日本の伝統色名（例: 『浅葱色・あさぎいろ』）を判定し、色名・読み方・由来のプチ解説カードを表示します。</p>
+<h4>2-3. 自分だけの「和風カラーパレット作成」＆ ワンタップ多形式コピー</h4>
+<p>抽出した色を「MYカラーパレット」として自動スタック保存。#HEX（#123456）、RGB（rgb(12,34,56)）、HSL形式でワンクリックでクリップボードへコピーし、PowerPointやIllustrator、Canvaへ即座に貼り付けられます。</p>
+<h3>3. 「日本の伝統色ピッカー」を今すぐ使いたくなる3つの詳細シナリオ</h3>
+<h4>3-1. 【シナリオA】和風コンセプトのWebサイト制作やポスター、チラシのデザインをするとき</h4>
+<p>参考にしたい素晴らしいWebサイトからカラーパレットをスポイト抽出。 「茜色（#B7282E）」「山吹色（#F8B500）」といった伝統色名とともにカラーコードを取得し、統一感と品格のある和風デザインを素早く組み上げることができます。</p>
+<h4>3-2. 【シナリオB】企画書やプレゼン資料で「色彩の根拠やコンセプト」を説明したいとき</h4>
+<p>社内プレゼンやクライアントへの提案資料で色を選ぶ際、単に「赤いボタン」とするのではなく、「日本の伝統色である『勝色（かちいろ）』を採用し、勝利と誠実さを表現しました」と説明を添えることで、提案の説得力とセンスが飛躍的に高まります。</p>
+<h4>3-3. 【シナリオC】ネットショッピングで服やインテリアの色味を正確に確認したいとき</h4>
+<p>ECサイトで服や家具を閲覧中、「この着物の色は実際の伝統色で言うと何色だろう？」とスポイトでチェック。正確なHEX/RGB値を確認することで、ディスプレイによる色の誤認を防ぎ、賢いお買い物ができます。</p>
+<h3>4. よくある質問（Q&amp;A）</h3>
+<h4>Q1. 画像の中の色や、動画の特定のフレームの色も取得できますか？</h4>
+<p><strong>A. 100%取得できます。</strong> 画面に表示されているあらゆる要素（画像、CSS背景、動画、文字、アイコン等）のピクセルカラーをそのまま正確に取得できます。</p>
+<h4>Q2. 取得したカラーコードのコピー形式（HEX / RGB / HSL）は切り替えられますか？</h4>
+<p><strong>A. 1タップで切り替えられます。</strong> 設定画面でデフォルトのコピー形式を選択できるほか、抽出カード上でクリックするだけでHEX、RGB、CSS形式を選択してコピーできます。</p>
+<h4>Q3. 抽出したカラーパレットをCSVやテキストで書き出すことはできますか？</h4>
+<p><strong>A. できます。</strong> 保存したカラーパレットを「カラーリストテキスト」または「ASE/CSVファイル」として保存し、Adobe Illustratorなどのデザインツールへ読み込ませることができます。</p>
+<h4>Q4. 他のカラーピッカー拡張機能と比べて何が優れていますか？</h4>
+<p><strong>A. 「和の伝統色名と由来がわかる点」です。</strong> 単なるカラーコードの抽出にとどまらず、日本の美しい色彩名や読み方がわかるため、デザイナーの感性とインスピレーションを強く刺激します。</p>
+<h3>■ 使い方（簡単3ステップ）</h3>
+<ol><li>色を取得したいWebページを開き、拡張機能の「スポイト開始」をクリック。</li><li>画面上の気になる色の上にルーペカーソルを合わせて1クリック。</li><li>カラーコード（#HEX）と近い「日本の伝統色名」が自動表示されるので、コピーしてデザインに使用！</li></ol>
+<h3>5. 完全ローカルキャンバス解析：GPUアクセラレーション ＆ 軽快動作</h3>
+<p>スポイト処理はブラウザ最新の EyeDropper API を活用し、超高速かつ超軽量に動作します。画面の画像データや閲覧URLが外部サーバーへ送信されることは絶対にありませんので、安全にご使用いただけます。</p>
+<h3>結論：Web上のすべての美しい色を、あなたのデザインの味方にしよう</h3>
+<p>「日本の伝統色ピッカー」を導入すれば、色選びの悩みやカラーコード探しの手間は一瞬で消え去ります。 日本の感性が息づく美しい色彩を集めて、あなただけの作品を創造してみませんか？ あなたのPCに、この「デジタル和風色見本帳」を迎えてみませんか？</p>
+      </div>
+
+      <div class="article-footer-cta">
+        <h2>日本の伝統色ピッカーを試してみる</h2>
+        <p>インストールから14日間、全機能を無料でご利用いただけます。継続利用には単品¥1,980または全51個が使える全部セット¥3,980が必要です。</p>
+        <span class="price-card-cta price-card-cta--pending">Lemon Squeezy登録準備中</span>
+      </div>
+    </article>
+
+    <a class="article-back-link" href="../index.html#catalog">&larr; 道具一覧に戻る</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+      <p class="footer-note">本サイトは51個のChrome拡張機能の紹介と、Lemon Squeezyでの商品登録に向けた準備のために制作しています。掲載中の紹介文は元資料を要約整形したものです。価格・利用条件は変更される場合があります。</p>
+    </div>
+
+    <nav class="footer-links" aria-label="フッターナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 和風ツール工房 — Lemon Squeezy登録準備中</p>
+  </div>
+</footer>
+
+</body>
+</html>

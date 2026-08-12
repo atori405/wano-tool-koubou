@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>読書集中ルーラー — 和風ツール工房</title>
+<meta name="description" content="広告やサイドバーによる視覚的ノイズを抑え、紙の本のように集中して読める。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%231F4E79%22/><circle cx=%2250%22 cy=%2250%22 r=%2224%22 fill=%22none%22 stroke=%22%23FDFCFA%22 stroke-width=%226%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </span>
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+    </a>
+
+    <nav class="site-nav" aria-label="サイト内ナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="article-wrap">
+    <p class="breadcrumb"><a href="../index.html#catalog">&larr; 道具一覧に戻る</a></p>
+
+    <article>
+      <div class="article-hero">
+        <div class="article-icon-row">
+          <img class="article-icon" src="../assets/icons/ext19.png" alt="" width="48" height="48">
+          <span class="article-tag">読書・情報収集</span>
+        </div>
+        <h1 class="article-title">読書集中ルーラー</h1>
+        <p class="article-tagline">視線をガイドして長文を読み切る</p>
+        <img class="article-hero-image" src="../assets/hero/ext19.png" alt="読書集中ルーラーのスクリーンショット" loading="lazy">
+
+        <div class="article-cta">
+          <p class="article-cta-text"><strong>14日間無料</strong>ですべての機能をお試しいただけます。</p>
+          <span class="article-cta-price">単品 ¥1,980 / 全部セット ¥3,980</span>
+        </div>
+        <a class="article-download-link" href="../downloads/ext19.zip" download>&darr; 拡張機能ファイル一式をダウンロード(zip)</a>
+        <p class="article-download-note">zipを解凍し、Chromeの「拡張機能」→「デベロッパーモード」→「パッケージ化されていない拡張機能を読み込む」からフォルダを選択してください。</p>
+      </div>
+
+      <div class="article-body">
+<p>【長文読破】視界を整え、集中を高める！「読書集中ルーラー」でネット記事も本のように読める</p>
+<p>はじめに：なぜネット記事や長文は読み飛ばしてしまうのか？ ニュースサイト、技術ブログ、電子書籍など、ウェブ上での読書機会が増える一方で、「文章を斜め読みしてしまい、内容が頭に入ってこない」「読んでいる行を見失って何度も同じ場所を読み直してしまう」といった経験はありませんか？ ウェブページは周囲に広告やサイドバーなどの視覚的ノイズが多く、スクロールによる画面の動きも激しいため、紙の書籍と比べて視線が泳ぎやすく、認知負荷（脳にかかるストレス）が高いことが原因と言われています。</p>
+<p>今回開発した「読書集中ルーラー」は、このようなウェブ読書特有のストレスを取り除き、驚くほどの集中力を生み出すために開発されたChrome拡張機能です。日本伝統の「竹尺（たけじゃく）」や「行灯（あんどん）」の光と影をモチーフにした美しいデザインで、読書体験を極限までシンプルにします。</p>
+<h3>どんなことができるか？（コア機能と仕組み）</h3>
+<p>この拡張機能は、ウェブページ上に「半透明の読書定規（ルーラー）」を重ね、フォーカスしている行以外を暗いマスクで覆うことで、視界をシャットアウトし文字だけに集中させる読書支援ツールです。</p>
+<ol><li>フォーカスウィンドウ＆ダークマスク</li></ol>
+<p>起動すると画面全体に半透明の黒いマスクがかかり、読みたい行（ルーラー内）だけがクリアに照らし出されます。視線が行列を行き来するのを防ぎ、まるで実際の定規を本に当てて読んでいるかのような没入感を提供します。</p>
+<ol><li>滑らかなマウス・キーボード追従</li></ol>
+<p>ルーラーはマウスカーソル（Y軸）の動きに連動して上下します。高度なアニメーション補正（イージング）を採用しているため、カクつくことなくスムーズに視線と並行移動します。また、マウスを持たずにキーボードの矢印キー（上下）でルーラーを微動させることもでき、長文のスクロール読書に最適です。</p>
+<ol><li>和風の配色プリセットと竹尺デザイン</li></ol>
+<p>障子越しの温かい光を再現した「行灯」、本物の竹の定規のような目盛りをあしらった「竹尺」、暗闇で白い文字だけを引き立たせる「漆黒」、優しく明るいコントラストの「透桜」の4つの和風テーマを選択できます。</p>
+<h3>主な特徴とこだわり</h3>
+<p>・ページ操作を一切妨げない設計（ノンブロッキング）： ルーラーやマスクが表示されていても、背後にあるテキストの選択やコピー、リンクのクリック、スクロールなどの操作は一切邪魔されません。実用性を損なうことなく、読書だけに集中できます。 ・ショートカットキーによるクイック起動： キーボードの Alt + R を押すだけで、ルーラーのON/OFFをいつでも瞬時に切り替えられます。読みたいと思ったその瞬間にフォーカスを開始できます。 ・直感的なカスタマイズ： ポップアップのコントローラーから、ルーラーの高さ（1行フォーカスから段落フォーカスまで調整可能）や、周囲のマスクの暗さ（不透明度）をスライダーで自由に変更できます。</p>
+<h3>使い方の手順</h3>
+<ol><li>起動：</li></ol>
+<p>記事ページを開き、キーボードの Alt + R を押すか、拡張機能のアイコンをクリックして「ルーラーの起動」をONにします。</p>
+<ol><li>視線追従：</li></ol>
+<p>マウスを上下に動かすと、定規が滑らかに追いかけてきます。読みたい行にルーラーを合わせ、周囲のノイズを消して読み進めましょう。</p>
+<ol><li>微調整とカスタマイズ：</li></ol>
+<p>ポップアップからルーラーの高さや暗さを変更したり、お好みの和風プリセット（行灯・竹尺など）を選んで目の疲れを軽減しましょう。</p>
+      </div>
+
+      <div class="article-footer-cta">
+        <h2>読書集中ルーラーを試してみる</h2>
+        <p>インストールから14日間、全機能を無料でご利用いただけます。継続利用には単品¥1,980または全51個が使える全部セット¥3,980が必要です。</p>
+        <span class="price-card-cta price-card-cta--pending">Lemon Squeezy登録準備中</span>
+      </div>
+    </article>
+
+    <a class="article-back-link" href="../index.html#catalog">&larr; 道具一覧に戻る</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+      <p class="footer-note">本サイトは51個のChrome拡張機能の紹介と、Lemon Squeezyでの商品登録に向けた準備のために制作しています。掲載中の紹介文は元資料を要約整形したものです。価格・利用条件は変更される場合があります。</p>
+    </div>
+
+    <nav class="footer-links" aria-label="フッターナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 和風ツール工房 — Lemon Squeezy登録準備中</p>
+  </div>
+</footer>
+
+</body>
+</html>

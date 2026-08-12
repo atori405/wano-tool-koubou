@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>和風Webライティング＆文章構造チェッカー — 和風ツール工房</title>
+<meta name="description" content="見出し階層の乱れや冗長な言い回しを検出し、Web向けの構成に整える。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%231F4E79%22/><circle cx=%2250%22 cy=%2250%22 r=%2224%22 fill=%22none%22 stroke=%22%23FDFCFA%22 stroke-width=%226%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </span>
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+    </a>
+
+    <nav class="site-nav" aria-label="サイト内ナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="article-wrap">
+    <p class="breadcrumb"><a href="../index.html#catalog">&larr; 道具一覧に戻る</a></p>
+
+    <article>
+      <div class="article-hero">
+        <div class="article-icon-row">
+          <img class="article-icon" src="../assets/icons/ext32.png" alt="" width="48" height="48">
+          <span class="article-tag">ビジネス文章・敬語</span>
+        </div>
+        <h1 class="article-title">和風Webライティング＆文章構造チェッカー</h1>
+        <p class="article-tagline">文章構造を可視化して読みやすさを底上げ</p>
+        <img class="article-hero-image" src="../assets/hero/ext32.png" alt="和風Webライティング＆文章構造チェッカーのスクリーンショット" loading="lazy">
+
+        <div class="article-cta">
+          <p class="article-cta-text"><strong>14日間無料</strong>ですべての機能をお試しいただけます。</p>
+          <span class="article-cta-price">単品 ¥1,980 / 全部セット ¥3,980</span>
+        </div>
+        <a class="article-download-link" href="../downloads/ext32.zip" download>&darr; 拡張機能ファイル一式をダウンロード(zip)</a>
+        <p class="article-download-note">zipを解凍し、Chromeの「拡張機能」→「デベロッパーモード」→「パッケージ化されていない拡張機能を読み込む」からフォルダを選択してください。</p>
+      </div>
+
+      <div class="article-body">
+<p>■ はじめに：なぜあなたの文章は「読みにくい」と言われてしまうのか？ ブログ記事やWebライティング、報告書を執筆する際、「全体の構成が分かりにくい」「冗長な表現が多くてまどろっこしい」と指摘されたことはありませんか？ 文章全体のボリュームが増えるほど、見出しの親子関係（H2, H3の階層）が崩れてしまったり、同じような口癖（「～を行うことが可能」など）を無意識に繰り返してしまいがちです。これらは読者の途中離脱や、サイトの信頼性低下を招く大きな原因となります。</p>
+<p>今回リリースした「和風Webライティング＆文章構造チェッカー」は、そんな執筆時の悩みを構造的・視覚的に一瞬で解消するために作られたChrome拡張機能です。単なる文字数カウントにとどまらず、冗長表現のピンポイント抽出や、見出し構造のツリー視覚化＆アドバイス機能によって、誰でも簡単・スピーディに「読みやすいプロの文章」へと推敲（すいこう）することができます。</p>
+<p>■ どんなことができるか？（コア機能と仕組み） 本ツールは、文章の「構造（見出し）」と「細部（表現）」の双方から同時にアプローチする、高機能なライティング推敲支援ツールです。</p>
+<ol><li><strong>見出し構造のツリー視覚化とインデント表示</strong> テキストに含まれるH2, H3, H4などの見出しタグを自動でスキャンし、<code>└</code> やインデント（字下げ）を用いて美しい家系図のような「ツリー構造」に視覚化します。文章全体の骨組みが一目で把握できます。</li></ol>
+<ol><li><strong>見出し階層の自動診断とアドバイス（バリデーター）</strong> 「H2の下にいきなりH4がきている」「H2がないのに先にH3がある」といった見出し構造のルール違反を自動で検出します。「見出しの階層ジャンプがあります。H3の前にH2を配置してください」といった具体的なアドバイスを警告表示し、SEO的にも正しい記事構造へと導きます。</li></ol>
+<ol><li><strong>冗長表現の検出と前後10文字スニペット抽出</strong> 「行うことが可能（➔ できる）」「～という形（➔ ～という方法）」などのWebライティングで嫌われやすい冗長表現や二重表現を検出します。その前後10文字を含めた「スニペット（出現箇所）」をリスト化し、該当語句を黄色くハイライトするため、長い文章のどこを修正すればいいのかが一目でわかります。</li></ol>
+<ol><li><strong>診断範囲プレビュー機能</strong> スキャンされた本文の「冒頭30文字...（中略）...末尾30文字」を表示します。現在どの範囲の文章がスキャン対象になっているかをリアルタイムで確認できるため、誤診断を防ぎます。</li></ol>
+<p>■ 主な特徴とこだわり</p>
+<ul><li><strong>WordPressや別窓ポップアップに完全対応：</strong></li></ul>
+<p>WordPressなどの記事エディター画面から別ウィンドウとして起動した場合でも、直前にフォーカスされていたブラウザの本文を正しく検出し、エラーなく動作する強固なタブ特定ロジックを搭載しています。</p>
+<ul><li><strong>目に優しい和モダンデザイン：</strong></li></ul>
+<p>洗練された和風のダークテーマを採用。フッターやラベルには視認性の高いライトグレー（#dcdbe3）を使用し、長時間の執筆作業でも目が疲れにくい落ち着いたトーンに統一されています。</p>
+<ul><li><strong>手軽なリセットボタン：</strong></li></ul>
+<p>ワンクリックで現在の診断結果をクリアし、すぐに新しい文章の診断に移ることができます。</p>
+<p>■ 使い方の手順</p>
+<ol><li><strong>ツールの起動：</strong> ブログの執筆画面（WordPressなど）を開いた状態で、ツールバーの「和風Webライティング＆文章構造チェッカー」のアイコンをクリックしてポップアップを起動します。</li><li><strong>文章の自動診断：</strong> ポップアップを開くと、現在開いているブラウザタブの本文が自動的にスキャンされます。「診断範囲プレビュー」で診断対象の文章を確認します。</li><li><strong>見出し構造と警告のチェック：</strong> 見出しツリーを確認し、赤字の警告やアドバイスが表示されている場合は、WordPress側の見出し設定を修正してツリーが綺麗に階層化されるように整えます。</li><li><strong>冗長表現の修正：</strong> 「冗長表現リスト」にリストアップされた出現箇所を確認し、ハイライトされた該当箇所を見ながらエディター上でよりスッキリとした表現に書き換えます。</li></ol>
+      </div>
+
+      <div class="article-footer-cta">
+        <h2>和風Webライティング＆文章構造チェッカーを試してみる</h2>
+        <p>インストールから14日間、全機能を無料でご利用いただけます。継続利用には単品¥1,980または全51個が使える全部セット¥3,980が必要です。</p>
+        <span class="price-card-cta price-card-cta--pending">Lemon Squeezy登録準備中</span>
+      </div>
+    </article>
+
+    <a class="article-back-link" href="../index.html#catalog">&larr; 道具一覧に戻る</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+      <p class="footer-note">本サイトは51個のChrome拡張機能の紹介と、Lemon Squeezyでの商品登録に向けた準備のために制作しています。掲載中の紹介文は元資料を要約整形したものです。価格・利用条件は変更される場合があります。</p>
+    </div>
+
+    <nav class="footer-links" aria-label="フッターナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 和風ツール工房 — Lemon Squeezy登録準備中</p>
+  </div>
+</footer>
+
+</body>
+</html>

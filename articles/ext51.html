@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>和製ポップアップブロック — 和風ツール工房</title>
+<meta name="description" content="メルマガ登録や追従型広告など、迷惑なポップアップを一括ブロックする。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%231F4E79%22/><circle cx=%2250%22 cy=%2250%22 r=%2224%22 fill=%22none%22 stroke=%22%23FDFCFA%22 stroke-width=%226%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </span>
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+    </a>
+
+    <nav class="site-nav" aria-label="サイト内ナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="article-wrap">
+    <p class="breadcrumb"><a href="../index.html#catalog">&larr; 道具一覧に戻る</a></p>
+
+    <article>
+      <div class="article-hero">
+        <div class="article-icon-row">
+          <img class="article-icon" src="../assets/icons/ext51.png" alt="" width="48" height="48">
+          <span class="article-tag">プライバシー保護</span>
+        </div>
+        <h1 class="article-title">和製ポップアップブロック</h1>
+        <p class="article-tagline">邪魔なポップアップを自動遮断</p>
+        <img class="article-hero-image" src="../assets/hero/ext51.png" alt="和製ポップアップブロックのスクリーンショット" loading="lazy">
+
+        <div class="article-cta">
+          <p class="article-cta-text"><strong>14日間無料</strong>ですべての機能をお試しいただけます。</p>
+          <span class="article-cta-price">単品 ¥1,980 / 全部セット ¥3,980</span>
+        </div>
+        <a class="article-download-link" href="../downloads/ext51.zip" download>&darr; 拡張機能ファイル一式をダウンロード(zip)</a>
+        <p class="article-download-note">zipを解凍し、Chromeの「拡張機能」→「デベロッパーモード」→「パッケージ化されていない拡張機能を読み込む」からフォルダを選択してください。</p>
+      </div>
+
+      <div class="article-body">
+<h3>1. Webサイトを開いた瞬間の「あの不快なポップアップ」に激怒していませんか？</h3>
+<h4>1-1. 記事を覆い隠す後出しポップアップ広告と誤タップの絶望</h4>
+<p>「話題のニュース記事を読もうとした瞬間、画面中央にドカンと『広告を見て応援してください』『メルマガに登録』『通知を許可』という巨大なポップアップが被さってきた…」 バツ印（✕）を探して消そうとしても、ボタンが極小サイズで押し間違えて広告サイトへ飛ばされる。苦労して閉じたと思ったら、今度は背景の画面が固まってスクロールできない。現代のWeb閲覧は、こうした不快なポップアップとの激しいストレスの戦いになっています。</p>
+<h4>1-2. 海外製アドブロッカーをすり抜ける「和製ポップアップ」の罠と限界</h4>
+<p>通常のAdBlockやuBlock Originなどの海外製ツールは「一般的なバナー広告」を消すのには優れていますが、日本のニュースメディア（東スポ、スポニチ、各種トレンドブログ、IT系サイト等）が採用している「HTML直埋め型の浮遊ダイアログ」や「後出しモーダル」はすり抜けてしまいます。 なぜなら、それらは外部の広告配信枠ではなく、JavaScriptで動的にページ内部に生成されるダイアログだからです。さらに、広告を消した後に背景の <code>&lt;body&gt;</code> タグに <code>overflow: hidden</code>（スクロール禁止）を付与する悪質な仕様のため、画面が凍りついて読書が中断される悪循環が発生します。</p>
+<h4>1-3. 日本のWeb環境に特化した「物理除去 ＋ スクロールロック自動解除」の守護神</h4>
+<p>「和製ポップアップブロック」は、日本のWebサイトで多用される不快なダイアログを自動検知し、物理的に消去する強力なポップアップ遮断Chrome拡張機能です。 モチーフにしたのは、日本の伝統的な魔除けや遮断を意味する「しめ縄と結界」。 ポップアップを消去すると同時に、背景のスクロール禁止状態を全自動で解除・復旧し、ストレスフリーな読書環境を取り戻します。</p>
+<h3>2. 使った人だけが実感する、一切の邪魔が入らない圧倒的開放感</h3>
+<h4>2-1. ボトムアップ＆テキスト解析による「後出しポップアップ」の自動特定</h4>
+<p>「広告を見て応援」「12時間表示されなくなります」「続きを読む」「クッキーに同意」といった日本のポップアップ特有のフレーズとDOM構造を瞬時に分析。どんなに階層が深くても、ポップアップのコンテナ要素をピンポイントで非表示化します。</p>
+<h4>2-2. スクロールロック（overflow: hidden）の自動復旧機能</h4>
+<p>ポップアップ広告を消した際、背景の<code>&lt;body&gt;</code>タグや<code>&lt;html&gt;</code>タグに強制付与された「overflow: hidden」や「position: fixed」をシステムが自動検知。瞬時にCSSを書き換え、ページが再びスムーズにスクロールできるように即座に復元します。</p>
+<h4>2-3. 毎回のCookie同意・メルマガダイアログの自動処置</h4>
+<p>訪問するたびに表示されて面倒な「Cookieの使用に同意してください」ダイアログもバックグラウンドで自動処理。余計なクリックの手間を全廃します。</p>
+<h3>3. 「和製ポップアップブロック」を今すぐ使いたくなる3つの詳細シナリオ</h3>
+<h4>3-1. 【シナリオA】東スポやスポニチ、各種ニュース・トレンドサイトを快適に読みたいとき</h4>
+<p>リロードするたびに、あるいはスクロールの途中で画面中央に居座るしつこい後出し広告が、出現したコンマ数秒で全自動消滅。記事本文だけに集中してサクサク読書が進みます。</p>
+<h4>3-2. 【シナリオB】「広告を閉じたのにスクロールできない」イライラを解消したいとき</h4>
+<p>従来のツールで広告枠だけを消した結果、画面がスクロール不能になってページを再読み込みし直す…という二重のストレスから完全に解放されます。</p>
+<h4>3-3. 【シナリオC】他の自作拡張機能や便利ツールと併用して安全に使いたいとき</h4>
+<p>本ツールは自作の便利拡張機能（フォントチェンジャーや翻訳ツール等）のUIを誤って削除しない回避ロジック（Bypass判定）を搭載。大切なツールを消すことなく、安全かつ快適に共存できます。</p>
+<h3>4. よくある質問（Q&amp;A）</h3>
+<h4>Q1. ログイン画面や検索窓など、必要なポップアップまで消されてしまいませんか？</h4>
+<p><strong>A. 消されません。</strong> 誤検知防止フィルターを搭載しており、ユーザーが明示的にクリックして開いたログインフォームや検索ダイアログは保持し、自動発生する広告系ダイアログのみを判別して消去します。</p>
+<h4>Q2. 他のアドブロック拡張機能（uBlock Origin等）と併用しても大丈夫ですか？</h4>
+<p><strong>A. 併用可能です。</strong> 他のアドブロッカーが消し残した「日本固有のポップアップ」や「スクロールロック」を本ツールが補完して除去するため、併用することで最強の閲覧環境が完成します。</p>
+<h4>Q3. サイト側がポップアップを再表示させようとしても防げますか？</h4>
+<p><strong>A. 防げます。</strong> MutationObserver（DOM監視エンジン）が常時ページを監視し、サイト側がスクロール後に再び広告要素を挿入しようとしても、瞬時に再ブロックします。</p>
+<h4>Q4. 特定のサイトでブロックを無効化（ホワイトリスト登録）できますか？</h4>
+<p><strong>A. 簡単にできます。</strong> ポップアップ内のトグルスイッチで、ドメインごとのON/OFFをいつでも切り替えられます。</p>
+<h3>■ 使い方（簡単3ステップ）</h3>
+<ol><li>インストールして有効化するだけで、全自動保護が即座にスタート。</li><li>ニュースサイトやブログを閲覧中、邪魔なポップアップが出現した瞬間に自動で消去。</li><li>スクロールも自動解除されるので、そのままストレスゼロで快適な読書を継続！</li></ol>
+<h3>5. 完全ローカル処理：誤検知防止 ＆ 永続監視ガード</h3>
+<p>ブロック処理はすべてお使いのブラウザ内部で行われます。閲覧履歴やアクセスデータが外部サーバーへ送信されることは一切ありません。</p>
+<h3>結論：Web閲覧のストレスをゼロにし、本来の情報収集を取り戻そう</h3>
+<p>「和製ポップアップブロック」を導入すれば、不快な割り込み広告やスクロール不能に邪魔される日々は二度と訪れません。 あなたのブラウザに最強の「遮断の結界」を張り、クリーンで快適なWeb体験を手に入れましょう。 あなたのPCに、この「頼もしいWebの守護神」を迎えてみませんか？</p>
+      </div>
+
+      <div class="article-footer-cta">
+        <h2>和製ポップアップブロックを試してみる</h2>
+        <p>インストールから14日間、全機能を無料でご利用いただけます。継続利用には単品¥1,980または全51個が使える全部セット¥3,980が必要です。</p>
+        <span class="price-card-cta price-card-cta--pending">Lemon Squeezy登録準備中</span>
+      </div>
+    </article>
+
+    <a class="article-back-link" href="../index.html#catalog">&larr; 道具一覧に戻る</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+      <p class="footer-note">本サイトは51個のChrome拡張機能の紹介と、Lemon Squeezyでの商品登録に向けた準備のために制作しています。掲載中の紹介文は元資料を要約整形したものです。価格・利用条件は変更される場合があります。</p>
+    </div>
+
+    <nav class="footer-links" aria-label="フッターナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 和風ツール工房 — Lemon Squeezy登録準備中</p>
+  </div>
+</footer>
+
+</body>
+</html>

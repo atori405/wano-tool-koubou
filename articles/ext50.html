@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文字化けレスキュー — 和風ツール工房</title>
+<meta name="description" content="Shift_JISやEUC-JPなど、レガシーな文字コードの文字化けを瞬時に直す。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%231F4E79%22/><circle cx=%2250%22 cy=%2250%22 r=%2224%22 fill=%22none%22 stroke=%22%23FDFCFA%22 stroke-width=%226%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </span>
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+    </a>
+
+    <nav class="site-nav" aria-label="サイト内ナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="article-wrap">
+    <p class="breadcrumb"><a href="../index.html#catalog">&larr; 道具一覧に戻る</a></p>
+
+    <article>
+      <div class="article-hero">
+        <div class="article-icon-row">
+          <img class="article-icon" src="../assets/icons/ext50.png" alt="" width="48" height="48">
+          <span class="article-tag">開発者ツール</span>
+        </div>
+        <h1 class="article-title">文字化けレスキュー</h1>
+        <p class="article-tagline">文字化けページをワンクリックで修復</p>
+        <img class="article-hero-image" src="../assets/hero/ext50.png" alt="文字化けレスキューのスクリーンショット" loading="lazy">
+
+        <div class="article-cta">
+          <p class="article-cta-text"><strong>14日間無料</strong>ですべての機能をお試しいただけます。</p>
+          <span class="article-cta-price">単品 ¥1,980 / 全部セット ¥3,980</span>
+        </div>
+        <a class="article-download-link" href="../downloads/ext50.zip" download>&darr; 拡張機能ファイル一式をダウンロード(zip)</a>
+        <p class="article-download-note">zipを解凍し、Chromeの「拡張機能」→「デベロッパーモード」→「パッケージ化されていない拡張機能を読み込む」からフォルダを選択してください。</p>
+      </div>
+
+      <div class="article-body">
+<h3>1. 古いWebサイトや官公庁ページを開いた瞬間の「記号だらけの文字化け」に頭を抱えていませんか？</h3>
+<h4>1-1. 画面一面に広がる「」や「 comply 」という暗号と解読不能の絶望</h4>
+<p>「官公庁の公的な手続きページ、大学のレガシーな研究データベース、企業の古い管理画面を開いた瞬間、画面上のテキストがすべて『』や意味不明な記号の羅列に化けていて、何も読めない…」 「急いで重要な申請書類や情報を確認したいのに、文字化けのせいで何のページなのか解読すらできない…」 Webサイトの閲覧中、誰もが一度はこの「文字化けの惨状」に直面し、強いストレスと絶望を感じたことがあるはずです。 ITが高度に発達した現代においても、日本のWeb空間には昭和・平成期に構築されたレガシーなエンコーディング（Shift-JIS、EUC-JP、ISO-2022-JPなど）で動作する重要サイトが数多く残されており、最新のブラウザ仕様との不整合によって文字化けが発生し続けています。</p>
+<h4>1-2. 最新ブラウザから「エンコーディング手動切替メニュー」が消えた悲劇</h4>
+<p>昔のブラウザ（旧Internet Explorerや古いChrome）には、メニューから「エンコード ➔ Shift-JIS / EUC-JP」を手動で切り替える機能が存在していました。 しかし、セキュリティと仕様標準化に伴い、最新のChromeブラウザからはこの手動エンコード変更メニューが完全に削除されてしまいました。その結果、文字化けしたページに遭遇した際、ユーザー側で修正する術がなく、お手上げ状態になっていたのです。</p>
+<h4>1-3. ボタン1タップで文字化けを解析 ＆ 正しい日本語テキストへ全自動復元</h4>
+<p>「文字化けレスキュー」は、そんなすべてのWeb閲覧者、行政手続きを行うビジネスパーソン、レガシーシステム利用者のための、文字化け緊急救済Chrome拡張機能です。 モチーフにしたのは、危機に瀕した古文書を鮮やかに復元する「和風の修復師と解読印」。 文字化けしたWebページを開いた状態でアイコンを1タップするだけで、元の文字コード（Shift-JIS, EUC-JP, ISO-2022-JP等）をAI・文字コード解析エンジンが瞬時に特定。現代の標準規格である「UTF-8」へリアルタイムで強制変換し、画面上のテキストをコンマ秒でクリアな日本語へ修復・復元します。</p>
+<h3>2. 使った人だけが実感する、暗号が一瞬で美しい日本語に化け直す感動</h3>
+<h4>2-1. Shift-JIS / EUC-JP / ISO-2022-JP の「全自動判定・強制UTF-8変換」</h4>
+<p>壊れたテキストのバイト配列を瞬時にスキャン。それが「Shift-JIS（Windows-31J）」なのか「EUC-JP」なのか「JISコード」なのかを自動判定し、ブラウザのDOMテキストを崩すことなく正確なUTF-8日本語へ変換・置換します。</p>
+<h4>2-2. 選択した「テキスト範囲だけのピンポイント文字化け修復」</h4>
+<p>ページ全体だけでなく、Webフォームの入力欄や、CSVダウンロード画面、受信メールの本文など、「文字化けしている一部分のテキスト」だけをマウスで選択して右クリック「文字化けを直す」でピンポイント修復可能です。</p>
+<h4>2-3. 文字化けしやすいドメインの「全自動自動修復ルール登録」</h4>
+<p>「仕事で頻繁にアクセスする官公庁のサイト」「自社の古い社内管理システム」など、毎回文字化けするドメインを登録しておけば、次回以降はそのページを開くだけで全自動で文字化けが修復されて表示されます。</p>
+<h3>3. 「文字化けレスキュー」を今すぐ使いたくなる3つの詳細シナリオ</h3>
+<h4>3-1. 【シナリオA】官公庁や自治体、税務署の古い手続きWebサイトを閲覧するとき</h4>
+<p>確定申告や各種申請で古い行政サイトを開いた際、見出しや入力説明がすべて「」と化けている状態。 本ツールの「修復」ボタンを1ポチ。一瞬で「申請にあたっての注意事項」というきれいな日本語テキストが蘇り、迷うことなく手続きを完了できます。</p>
+<h4>3-2. 【シナリオB】社内のレガシーシステム（平成初期に構築された管理画面）で作業するとき</h4>
+<p>会社の基幹システムや古い顧客データベースで、顧客名や住所が文字化けして業務がストップ。 ワンタップで文字化けを解除し、正しく「株式会社〇〇 担当：山田」と表示させることで、業務の停滞を完全に防止できます。</p>
+<h4>3-3. 【シナリオC】古文書や大学の古い研究論文データベース、Webアーカイブを調査するとき</h4>
+<p>学術調査やリサーチで古いWebアーカイブ（1990年代〜2000年代のサイト）を発掘した際。 EUC-JPやISO-2022-JPの複雑な文字化けも完璧に解読・復元でき、貴重な歴史的情報や論文テキストをストレスゼロで読み込むことができます。</p>
+<h3>4. よくある質問（Q&amp;A）</h3>
+<h4>Q1. 文字化けを修復することで、元のWebサイトのデータが壊れたりしませんか？</h4>
+<p><strong>A. 100%安全です。</strong> 本ツールはお使いのブラウザ上の「表示テキスト」のみをローカルで置換・修復するため、Webサーバー側の元のデータやファイルに影響を与えることは絶対にありません。</p>
+<h4>Q2. 日本語以外の文字化け（中国語 GB2312や韓国語 EUC-KR等）にも対応していますか？</h4>
+<p><strong>A. 対応しています。</strong> 日本語（Shift-JIS / EUC-JP）を中心に、アジア圏のレガシー文字コード（繁体字・簡体字・韓国語）の自動判定・修復エンジンも内蔵しています。</p>
+<h4>Q3. テキストファイル（.txtや.csv）をブラウザで開いて文字化けした場合も直せますか？</h4>
+<p><strong>A. 綺麗に直せます。</strong> ブラウザで直接開いたCSVファイルやテキストファイルの文字化けも、ワンクリックで正しい日本語表記に修復・表示できます。</p>
+<h4>Q4. なぜ最新のChromeでは文字化けが起きるのですか？</h4>
+<p><strong>A. ブラウザがUTF-8を標準と仮定して読み込むためです。</strong> 古いサイトが文字コード宣言（meta charset）を正しく記述していない場合、ブラウザが誤った文字コードで解釈してしまうためです。本ツールはその誤解釈を強力に補正します。</p>
+<h3>■ 使い方（簡単3ステップ）</h3>
+<ol><li>文字化けして読めないWebページやファイルを開く。</li><li>拡張機能の「文字化け修復」ボタンを1タップ（または右クリックメニューから実行）。</li><li>意味不明な記号が一瞬で美しい日本語テキストへ復元され、ストレスゼロで読書・作業を継続！</li></ol>
+<h3>5. 完全ローカルデコード：プライバシーとデータの絶対安全保証</h3>
+<p>文字コードの解析およびUTF-8への変換処理は、すべてお使いのパソコン内部（ブラウザローカル環境）で完結して実行されます。閲覧中のページ内容やテキストデータが外部サーバーへ送信されることは絶対にありません。</p>
+<h3>結論：文字化けのストレスから解放され、すべてのWeb情報を正しく読み解こう</h3>
+<p>「文字化けレスキュー」を導入すれば、もう古いサイトや官公庁のページで暗号のような文字化けに頭を抱えることはありません。 どんなレガシーなWebページも一瞬で復元する安心感を手に入れて、快適なWeb閲覧を楽しみませんか？ あなたのブラウザに、この「頼もしい和の文字修復師」を迎えてみませんか？</p>
+      </div>
+
+      <div class="article-footer-cta">
+        <h2>文字化けレスキューを試してみる</h2>
+        <p>インストールから14日間、全機能を無料でご利用いただけます。継続利用には単品¥1,980または全51個が使える全部セット¥3,980が必要です。</p>
+        <span class="price-card-cta price-card-cta--pending">Lemon Squeezy登録準備中</span>
+      </div>
+    </article>
+
+    <a class="article-back-link" href="../index.html#catalog">&larr; 道具一覧に戻る</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+      <p class="footer-note">本サイトは51個のChrome拡張機能の紹介と、Lemon Squeezyでの商品登録に向けた準備のために制作しています。掲載中の紹介文は元資料を要約整形したものです。価格・利用条件は変更される場合があります。</p>
+    </div>
+
+    <nav class="footer-links" aria-label="フッターナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 和風ツール工房 — Lemon Squeezy登録準備中</p>
+  </div>
+</footer>
+
+</body>
+</html>

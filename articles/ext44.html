@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>やさしいAPIテスター — 和風ツール工房</title>
+<meta name="description" content="レスポンスのJSONやエラーを、日本語の注釈付きでそのまま確認できる。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%231F4E79%22/><circle cx=%2250%22 cy=%2250%22 r=%2224%22 fill=%22none%22 stroke=%22%23FDFCFA%22 stroke-width=%226%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </span>
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+    </a>
+
+    <nav class="site-nav" aria-label="サイト内ナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="article-wrap">
+    <p class="breadcrumb"><a href="../index.html#catalog">&larr; 道具一覧に戻る</a></p>
+
+    <article>
+      <div class="article-hero">
+        <div class="article-icon-row">
+          <img class="article-icon" src="../assets/icons/ext44.png" alt="" width="48" height="48">
+          <span class="article-tag">開発者ツール</span>
+        </div>
+        <h1 class="article-title">やさしいAPIテスター</h1>
+        <p class="article-tagline">ブラウザ上でAPIをGET/POSTテスト</p>
+        <img class="article-hero-image" src="../assets/hero/ext44.png" alt="やさしいAPIテスターのスクリーンショット" loading="lazy">
+
+        <div class="article-cta">
+          <p class="article-cta-text"><strong>14日間無料</strong>ですべての機能をお試しいただけます。</p>
+          <span class="article-cta-price">単品 ¥1,980 / 全部セット ¥3,980</span>
+        </div>
+        <a class="article-download-link" href="../downloads/ext44.zip" download>&darr; 拡張機能ファイル一式をダウンロード(zip)</a>
+        <p class="article-download-note">zipを解凍し、Chromeの「拡張機能」→「デベロッパーモード」→「パッケージ化されていない拡張機能を読み込む」からフォルダを選択してください。</p>
+      </div>
+
+      <div class="article-body">
+<h3>1. APIの動作確認で「重い外部ツールをわざわざ起動する面倒くささ」に疲れていませんか？</h3>
+<h4>1-1. ちょっとしたAPIテストのためにPostmanやInsomniaを立ち上げる億劫さ</h4>
+<p>「開発中のWeb APIや外部サービス連携で、『このURLから正しいJSONが返ってくるか、今すぐちょっと確認したい』『POSTリクエストでパラメータが届くか確認したい』だけなのに、巨大で重いPostmanやInsomniaといった外部アプリをわざわざ立ち上げる…」 アプリが起動するまでの待ち時間、複雑すぎる画面インターフェース、英語だらけのパラメータ設定画面にうんざりした経験はありませんか？ ほんの数十秒の確認作業のために、重いツールを起動して設定する手間は、Web開発者やフロントエンドエンジニアの作業の波（フロー状態）を途切れさせる大きな障害になっています。</p>
+<h4>1-2. 英語のエラーレスポンスや404/500エラーの原因が分からず途方に暮れる初学者の挫折</h4>
+<p>さらに、APIテストを実行して <code>401 Unauthorized</code> や <code>422 Unprocessable Entity</code> や CORSエラー（<code>Cross-Origin Resource Sharing</code>）が発生した際、画面に表示されるのは冷たい英語のステータスコードとエラーメッセージだけです。 特にAPI開発の初学者やWeb制作の担当者にとって、「なぜエラーになったのか」「リクエストヘッダーの何が間違っているのか」が直感的に理解できず、エラー解決のために何時間も検索サイトを彷徨うという不毛な時間が消費されていました。</p>
+<h4>1-3. ブラウザ内で完結する軽量GUI ＆ 日本語エラーAI解説アシスタント</h4>
+<p>「やさしいAPIテスター」は、そんなすべてのWeb開発者・フロントエンド担当者・API学習者のための、超軽量APIテストChrome拡張機能です。 モチーフにしたのは、初心者にも優しく手ほどきをする「和風の指南書と水引」。 外部アプリを起動する必要は100%ありません。ブラウザのサイドバーやポップアップから一瞬で起動し、直感的な和風GUIでGET/POST/PUT/DELETEリクエストを送信。返ってきたエラーに対しても「何が原因でどう修正すればいいか」を分かりやすい日本語で丁寧に解説します。</p>
+<h3>2. 使った人だけが実感する、APIテストがサクサク進む圧倒的な手軽さ</h3>
+<h4>2-1. ブラウザ上で秒速起動する「超軽量・直感APIテストパネル」</h4>
+<p>Postmanのような重い起動時間はゼロ。サイドバーからコンマ1秒でパネルが開き、URL入力、メソッド選択（GET/POST等）、リクエストヘッダー/ボディ（JSON）のセットが直感的な画面で完結します。</p>
+<h4>2-2. 英語のエラーを優しい日本語で噛み砕く「日本語エラー解説エンジン」</h4>
+<p><code>403 Forbidden</code> が返ってくれば「【アクセス拒否】APIキーまたは認証トークンが不足しているか、無効です」、CORSエラーなら「【オリジン制限】サーバー側でブラウザからのアクセス許可ヘッダー（Access-Control-Allow-Origin）が必要です」と、解決策を含めた親切な日本語アドバイスが自動表示されます。</p>
+<h4>2-3. リクエスト履歴の自動保存 ＆ コードスニペット一発生成（cURL / JavaScript）</h4>
+<p>一度テストしたリクエスト（URL・ヘッダー・ボディ）を履歴として自動保存。ワンタップで過去のテストを再現できるほか、実行したテストを「cURLコマンド」や「JavaScript fetch() コード」へ一瞬で変換・コピーできます。</p>
+<h3>3. 「やさしいAPIテスター」を今すぐ使いたくなる3つの詳細シナリオ</h3>
+<h4>3-1. 【シナリオA】フロントエンド実装中、バックエンドAPIが正常に動作するかサッと確認したいとき</h4>
+<p>ブラウザでコードを書いている最中、サイドバーから本ツールをサッと展開。 APIのURLを貼り付けて「送信」を押すだけで、コンマ秒でレスポンスJSONとステータスコード200を確認。そのままfetchコードをコピーして自分のプログラムへ組み込めます。</p>
+<h4>3-2. 【シナリオB】API接続テストで謎の400系・500系エラーが出で困り果てているとき</h4>
+<p>エラーが発生した際、ツール内の「日本語解説」をチェック。 「ヘッダーの Content-Type: application/json が抜けています」という具体的なアドバイスに従って修正することで、スタックすることなく1分でエラーを自己解決できます。</p>
+<h4>3-3. 【シナリオC】プログラミングスクール生や新人がWeb APIの仕組みを学習するとき</h4>
+<p>Postmanの複雑な英語画面に圧倒されることなく、日本語表記の「やさしいAPIテスター」でリクエストとレスポンスの関係を視覚的に理解。学習の挫折を防ぎ、APIの挙動を楽しく学べます。</p>
+<h3>4. よくある質問（Q&amp;A）</h3>
+<h4>Q1. ローカル開発環境（http://localhost:3000 等）のAPIでもテストできますか？</h4>
+<p><strong>A. 完璧に動作します。</strong> ローカルサーバー（localhostや127.0.0.1）や社内開発環境のAPIに対しても、ブラウザから直接リクエストを送信してテストできます。</p>
+<h4>Q2. 認証（Bearer Token や API Key、Cookie認証）が必要なAPIにも対応していますか？</h4>
+<p><strong>A. 対応しています。</strong> リクエストヘッダー設定から <code>Authorization: Bearer xxxx</code> を簡単にセットできるほか、ブラウザのCookieをそのまま引き継いでテストするモードも備えています。</p>
+<h4>Q3. テストしたリクエスト内容が外部に漏れる心配はありませんか？</h4>
+<p><strong>A. ありません。</strong> リクエスト送信および履歴データの保存は、すべてお使いのブラウザと通信先サーバー間のみで行われます。本ツールが仲介サーバーへデータを送信することは絶対にありません。</p>
+<h4>Q4. POSTリクエストでJSON以外のデータ（Formデータや画像アップロード）もテストできますか？</h4>
+<p><strong>A. 可能です。</strong> <code>application/json</code> のほか、<code>application/x-www-form-urlencoded</code> や <code>multipart/form-data</code> に対応しています。</p>
+<h3>■ 使い方（簡単3ステップ）</h3>
+<ol><li>サイドバーから「やさしいAPIテスター」を一瞬で開く。</li><li>APIのURLを入力し、メソッド（GET/POST）とパラメータ（JSON等）をセットして「送信」をタップ。</li><li>レスポンス結果や日本語エラー解説をサッと確認し、コードスニペットをコピーして開発完了！</li></ol>
+<h3>5. 完全ローカル通信：セキュリティと爆速レスポンスの保証</h3>
+<p>APIリクエストの送信および履歴保存はお使いのパソコン内部（ローカル環境）でのみ実行されます。中継サーバー等を一切介さないため、機密性の高い社内APIでも安全かつ爆速でテストできます。</p>
+<h3>結論：重いツールとお別れし、APIテストをもっと身近で手軽なものに</h3>
+<p>「やさしいAPIテスター」を導入すれば、もう確認のためだけに重いアプリを起動したり、英語のエラーに悩まされることはありません。 サクサク快適な開発体験を手に入れて、毎日のコーディングを爆速化しませんか？ あなたのブラウザに、この「優しく頼もしい和のAPIガイド」を迎えてみませんか？</p>
+      </div>
+
+      <div class="article-footer-cta">
+        <h2>やさしいAPIテスターを試してみる</h2>
+        <p>インストールから14日間、全機能を無料でご利用いただけます。継続利用には単品¥1,980または全51個が使える全部セット¥3,980が必要です。</p>
+        <span class="price-card-cta price-card-cta--pending">Lemon Squeezy登録準備中</span>
+      </div>
+    </article>
+
+    <a class="article-back-link" href="../index.html#catalog">&larr; 道具一覧に戻る</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+      <p class="footer-note">本サイトは51個のChrome拡張機能の紹介と、Lemon Squeezyでの商品登録に向けた準備のために制作しています。掲載中の紹介文は元資料を要約整形したものです。価格・利用条件は変更される場合があります。</p>
+    </div>
+
+    <nav class="footer-links" aria-label="フッターナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 和風ツール工房 — Lemon Squeezy登録準備中</p>
+  </div>
+</footer>
+
+</body>
+</html>

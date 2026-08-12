@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日本語テストデータジェネレーター — 和風ツール工房</title>
+<meta name="description" content="氏名・住所・電話番号など実在感のある架空データを、件数指定で一瞬生成する。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%231F4E79%22/><circle cx=%2250%22 cy=%2250%22 r=%2224%22 fill=%22none%22 stroke=%22%23FDFCFA%22 stroke-width=%226%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </span>
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+    </a>
+
+    <nav class="site-nav" aria-label="サイト内ナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="article-wrap">
+    <p class="breadcrumb"><a href="../index.html#catalog">&larr; 道具一覧に戻る</a></p>
+
+    <article>
+      <div class="article-hero">
+        <div class="article-icon-row">
+          <img class="article-icon" src="../assets/icons/ext45.png" alt="" width="48" height="48">
+          <span class="article-tag">開発者ツール</span>
+        </div>
+        <h1 class="article-title">日本語テストデータジェネレーター</h1>
+        <p class="article-tagline">テスト用のダミー日本語データを自動生成</p>
+        <img class="article-hero-image" src="../assets/hero/ext45.png" alt="日本語テストデータジェネレーターのスクリーンショット" loading="lazy">
+
+        <div class="article-cta">
+          <p class="article-cta-text"><strong>14日間無料</strong>ですべての機能をお試しいただけます。</p>
+          <span class="article-cta-price">単品 ¥1,980 / 全部セット ¥3,980</span>
+        </div>
+        <a class="article-download-link" href="../downloads/ext45.zip" download>&darr; 拡張機能ファイル一式をダウンロード(zip)</a>
+        <p class="article-download-note">zipを解凍し、Chromeの「拡張機能」→「デベロッパーモード」→「パッケージ化されていない拡張機能を読み込む」からフォルダを選択してください。</p>
+      </div>
+
+      <div class="article-body">
+<h3>1. Webフォームの動作確認やテスト入力で「手動で適当な名前やダミー住所を打ち込む面倒くささ」に辟易していませんか？</h3>
+<h4>1-1. 「あああ」「テスト太郎」「test@example.com」を入力し続ける不毛な手作業の絶望</h4>
+<p>「Webサイトの会員登録フォームや問合せフォーム、ECサイトの決済画面の開発・テスト。動作確認のために『テスト太郎』『あいうえお』『090-0000-0000』『test@test.com』といったダミーデータを何度も手動で打ち込んでいる…」 「文字数制限や郵便番号のバリデーション（形式チェック）に引っかかり、入力エラーでフォームが送信できず二重の手間が発生した…」 Webエンジニア、QAテスター、Web制作に携わる人なら、誰もが一度はこの「ダミーデータ入力の手間」に精神を擦り減らしているはずです。 1つのフォームテストのために数十個の入力項目を手動で埋める作業は、集中力を著しく奪い、テストの抜け漏れや開発スケジュールの遅延を引き起こす隠れた病巣となっています。</p>
+<h4>1-2. 「リアルな日本語データ」や「異常値テスト」を用意する圧倒的な困難</h4>
+<p>開発の現場では、単なる「あいうえお」ではなく、実際のユーザーが入力しそうな「リアルな姓名（漢字・フリガナ）」「存在するフォーマットの日本住所」「正しい桁数の電話番号」でのテストが不可欠です。また、境界値テストや例外テストのために「全角英数」「絵文字混じり」「長すぎる住所」といったバグを引き起こしやすい異常値データの用意も必要ですが、これらを都度手動で作成するのは人間の耐えられる限界を超えています。</p>
+<h4>1-3. ワンクリックでWebフォーム全体に「完璧な和風ダミーデータ」を一発インジェクション</h4>
+<p>「日本語テストデータジェネレーター」は、そんなWebフォーム開発・テストのすべての面倒を1秒で全自動化する、テスト効率化Chrome拡張機能です。 モチーフにしたのは、日本の伝統的な人名録や地誌である「和風の芳名帳（ほうめいちょう）と割印」。 Webページ上の入力フォーム（input/select/textarea）を自動検知し、「山田 太郎」「ヤマダ タロウ」「東京都千代田区麹町1-2-3」「090-1234-5678」といったリアルな架空の日本人データ、あるいは意図的な異常値データを、ボタン1タップでフォーム全体へ吸い込まれるように一括自動挿入します。</p>
+<h3>2. 使った人だけが実感する、フォームテストが1秒で終わる圧倒的爆速ワークフロー</h3>
+<h4>2-1. 1タップでフォーム全体を埋める「スマート全自動インジェクション」</h4>
+<p>画面上の「名前」「フリガナ」「郵便番号」「住所」「電話番号」「メールアドレス」「生年月日」「クレジットカード番号」などの属性をAIが自動判別。フォーム全体へ一発で自然なダミーデータを一括挿入します。</p>
+<h4>2-2. 正常値 ＆ バリデーション検証用の「意図的異常値データ生成」</h4>
+<ul><li><strong>正常値モード</strong>: バリデーションを確実に通過するリアルな架空の日本人名・実在フォーマット住所。</li><li><strong>異常値モード</strong>: 「全角数字」「禁忌文字」「絵文字」「ハイフンなし電話番号」「超長文テキスト」など、システムのエラー処理をテストするための境界値データを一発生成。</li></ul>
+<h4>2-3. よく使うテストパターンの「プロファイル保存 ＆ ワンクリック呼び出し」</h4>
+<p>「法人顧客用」「未成年ユーザー用」「特定エラー発生用」など、独自のテストデータセットをプロファイルとして保存。いつでもワンタップで好みのデータセットを呼び出してフォームへ注入できます。</p>
+<h3>3. 「日本語テストデータジェネレーター」を今すぐ使いたくなる3つの詳細シナリオ</h3>
+<h4>3-1. 【シナリオA】複雑な多段階フォーム（会員登録 ➔ 住所入力 ➔ 確認画面）のテストを行うとき</h4>
+<p>画面を切り替えるたびに本ツールの「自動入力」ボタンを1ポチ。 いちいちキーボードを叩いて住所や名前を入力する必要が完全ゼロになり、10分かかっていたフォームテストがわずか15秒で完了します。</p>
+<h4>3-2. 【シナリオB】バリデーション（入力チェック）が正しく動作するか品質管理（QA）をするとき</h4>
+<p>「異常値モード」を起動して1タップ。 全角英数や長文テキストが一括セットされ、システムが適切にエラーメッセージを表示するか、画面が崩れないかを瞬時に検証できます。</p>
+<h4>3-3. 【シナリオC】デザインのプレゼンやデモ画面で「リアルな見た目」を見せたいとき</h4>
+<p>「テスト太郎」や「あいうえお」というダサいダミーデータではなく、「佐藤 健太」「神奈川県横浜市…」といった本物そっくりのきれいなデータが入った画面でデモを実施。顧客やチームにプロフェッショナルな印象を与えられます。</p>
+<h3>4. よくある質問（Q&amp;A）</h3>
+<h4>Q1. 生成される日本人名や住所は実在する個人のプライバシー情報ではありませんか？</h4>
+<p><strong>A. 100%架空のデータです。</strong> ランダムな苗字と名前の組み合わせ、アルゴリズムで自動生成された架空の番地データのため、実在する人物の個人情報とは一切関係ありません。安心してテストに使用できます。</p>
+<h4>Q2. ReactやVue.js、Angularなどの近代的なWebフレームワークのフォームでも入力値が消えませんか？</h4>
+<p><strong>A. 完璧に対応しています。</strong> 仮想DOM（Virtual DOM）の <code>input</code> イベントや <code>change</code> イベントを正確に発火させる特殊なインジェクションロジックを搭載しているため、値が消えたり認識されないトラブルを防ぎます。</p>
+<h4>Q3. 特定の入力項目（例: 弊社独自の社員コード欄）にも自動入力できますか？</h4>
+<p><strong>A. カスタムルールを設定できます。</strong> <code>input[name="employee_code"]</code> に対して「<code>EMP-1234</code> の形式で生成」というカスタムマッピングを簡単に登録できます。</p>
+<h4>Q4. 動作が重くなったりブラウザに負荷がかかりませんか？</h4>
+<p><strong>A. 超軽量です。</strong> ローカルの生成エンジンがコンマ数ミリ秒でテキストを組み立てるため、どんなに項目数が多いフォームでも一瞬で入力が完了します。</p>
+<h3>■ 使い方（簡単3ステップ）</h3>
+<ol><li>テストしたいWebフォーム（会員登録画面や問い合わせフォーム等）を開く。</li><li>拡張機能の「データ自動注入」ボタンを1タップ（またはショートカットキー <code>Alt+Shift+F</code>）。</li><li>フォーム全体の全項目にリアルな日本人名・住所が瞬時に一瞬で挿入され、テスト完了！</li></ol>
+<h3>5. 完全ローカル生成：セキュリティとプライバシー完全保護</h3>
+<p>テストデータの生成およびフォームへの挿入処理は、すべてお使いのパソコン内部（ブラウザローカル環境）で完結して実行されます。外部サーバーへの通信は一切発生しませんので、社内閉域網の開発環境でも安全にご利用いただけます。</p>
+<h3>結論：不毛な手動入力を全廃し、本質的な開発と品質管理に集中しよう</h3>
+<p>「日本語テストデータジェネレーター」を導入すれば、もうテストのたびに「あいうえお」とキーボードを叩くストレスとは無縁になります。 スマートで爆速なテスト環境を手に入れて、開発の生産性を一気に引き上げませんか？ あなたのブラウザに、この「頼もしい和のテストアシスタント」を迎えてみませんか？</p>
+      </div>
+
+      <div class="article-footer-cta">
+        <h2>日本語テストデータジェネレーターを試してみる</h2>
+        <p>インストールから14日間、全機能を無料でご利用いただけます。継続利用には単品¥1,980または全51個が使える全部セット¥3,980が必要です。</p>
+        <span class="price-card-cta price-card-cta--pending">Lemon Squeezy登録準備中</span>
+      </div>
+    </article>
+
+    <a class="article-back-link" href="../index.html#catalog">&larr; 道具一覧に戻る</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+      <p class="footer-note">本サイトは51個のChrome拡張機能の紹介と、Lemon Squeezyでの商品登録に向けた準備のために制作しています。掲載中の紹介文は元資料を要約整形したものです。価格・利用条件は変更される場合があります。</p>
+    </div>
+
+    <nav class="footer-links" aria-label="フッターナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 和風ツール工房 — Lemon Squeezy登録準備中</p>
+  </div>
+</footer>
+
+</body>
+</html>

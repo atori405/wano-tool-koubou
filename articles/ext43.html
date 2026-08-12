@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日本語コミットメッセージ作成 — 和風ツール工房</title>
+<meta name="description" content="Gitの変更差分とコミット種別から、絵文字付きの分かりやすい日本語メッセージを作る。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%231F4E79%22/><circle cx=%2250%22 cy=%2250%22 r=%2224%22 fill=%22none%22 stroke=%22%23FDFCFA%22 stroke-width=%226%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </span>
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+    </a>
+
+    <nav class="site-nav" aria-label="サイト内ナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="article-wrap">
+    <p class="breadcrumb"><a href="../index.html#catalog">&larr; 道具一覧に戻る</a></p>
+
+    <article>
+      <div class="article-hero">
+        <div class="article-icon-row">
+          <img class="article-icon" src="../assets/icons/ext43.png" alt="" width="48" height="48">
+          <span class="article-tag">開発者ツール</span>
+        </div>
+        <h1 class="article-title">日本語コミットメッセージ作成</h1>
+        <p class="article-tagline">diffからコミットメッセージを自動生成</p>
+        <img class="article-hero-image" src="../assets/hero/ext43.png" alt="日本語コミットメッセージ作成のスクリーンショット" loading="lazy">
+
+        <div class="article-cta">
+          <p class="article-cta-text"><strong>14日間無料</strong>ですべての機能をお試しいただけます。</p>
+          <span class="article-cta-price">単品 ¥1,980 / 全部セット ¥3,980</span>
+        </div>
+        <a class="article-download-link" href="../downloads/ext43.zip" download>&darr; 拡張機能ファイル一式をダウンロード(zip)</a>
+        <p class="article-download-note">zipを解凍し、Chromeの「拡張機能」→「デベロッパーモード」→「パッケージ化されていない拡張機能を読み込む」からフォルダを選択してください。</p>
+      </div>
+
+      <div class="article-body">
+<h3>1. GitのコミットやGitHubでのコード保存時、「なんてコミットメッセージを書けばいいか分からない」と手が止まっていませんか？</h3>
+<h4>1-1. 「fix bug」「update」などの適当なコミットで、チームメンバーや未来の自分から呆れられる絶望</h4>
+<p>「コードの修正が完了し、いざGitHubやブラウザ上でコミットしようとした瞬間、メッセージ入力欄の前で手がピタッと止まってしまう…」 「英語で書くべきか日本語で書くべきか悩み、結局面倒になって『update』や『fix』『修正』といった雑なメッセージで送信してしまった…」 Webエンジニアやチーム開発を行なうプログラマーなら、誰しも一度はこのコミットメッセージ作成の手間と悩みを経験しているはずです。 過去のコミット履歴を後から振り返った時、全行が「update」「fix」で埋め尽くされている画面は、何の変更が行われたのか全く判別できません。プルリクエスト（PR）のレビュー担当者や未来の自分から「何の修正か分からない」と呆れられ、開発の透明性や信用を損ねる大きな原因となっています。</p>
+<h4>1-2. チームの規約（Conventional Commits）を意識しながらメッセージを考える圧倒的な時間ロス</h4>
+<p>多くの開発チームでは、「<code>feat:</code>（新機能）」「<code>fix:</code>（バグ修正）」「<code>refactor:</code>（リファクタリング）」「<code>docs:</code>（ドキュメント更新）」といった世界的標準フォーマット（Conventional Commits）が推奨されています。 しかし、変更したコード差分（Diff）を見ながら、「これは<code>refactor</code>なのか<code>fix</code>なのか？」「どのような日本語表現で書くのがチームに伝わりやすいか？」をいちいち頭の中で英語混じりに文章化するのは、コードを書く以上の脳の疲労と時間ロスをもたらします。</p>
+<h4>1-3. コード差分（Diff）からAIがプロ級の日本語コミット文章を1秒で全自動生成</h4>
+<p>「日本語コミットメッセージ作成」は、そんなすべての開発者のコミット作成ストレスを全自動で解消する、AI開発アシスタントChrome拡張機能です。 モチーフにしたのは、日本の伝統的な公文書や記録を司る「和風の記録台帳と花押（かおう）」。 GitHub、GitLabなどのWeb UI上やブラウザ画面で変更されたコード差分（Diff）をAIが自動解析。チーム規約に沿ったプレフィックス（<code>feat:</code>, <code>fix:</code>, <code>style:</code> など）を自動選定し、変更内容を完璧に要約した美しい日本語コミットメッセージを1秒で生成・自動挿入します。</p>
+<h3>2. 使った人だけが実感する、チームから絶賛されるコミット履歴が勝手に出来上がる快適さ</h3>
+<h4>2-1. コードDiffからの全自動プレフィックス判別エンジン（Conventional Commits準拠）</h4>
+<p>変更されたファイル名やコードの追加・削除行（Diff）をAIが瞬時に分析。新機能の追加なら <code>feat:</code>、バグ修正なら <code>fix:</code>、CSSや見た目の修正なら <code>style:</code>、テストコードなら <code>test:</code> を全自動で正しく判別して先頭に付与します。</p>
+<h4>2-2. 簡潔で分かりやすい「日本語要約メッセージ」の生成</h4>
+<p>単に英語を翻訳するのではなく、「<code>feat: ログインフォームのバリデーション処理およびエラー表示を追加</code>」「<code>fix: モバイル表示時のナビゲーションメニューの崩れを修正</code>」といった、チーム開発でそのまま使えるプロ品質の日本語説明文を全自動で組み立てます。</p>
+<h4>2-3. ワンクリック自動入力 ＆ トーン切替（詳細版/一行版）</h4>
+<p>生成されたメッセージは、ボタンを1タップするだけでGitHub等のコミットメッセージ入力フォームへ一発入力。必要に応じて「1行で簡潔に」「変更点を箇条書きで詳細に」などのトーンを自由に切り替えられます。</p>
+<h3>3. 「日本語コミットメッセージ作成」を今すぐ使いたくなる3つの詳細シナリオ</h3>
+<h4>3-1. 【シナリオA】複数ファイルの修正を終え、GitHubのブラウザ画面でプルリクエストやコミットを作成するとき</h4>
+<p>数十行のコード変更を終え、本ツールの「メッセージ生成」ボタンを1ポチ。 AIがコード変更を正確に読み取り、「<code>refactor: ユーザー認証APIの非同期処理をリファクタリング</code>」という完璧なメッセージを入力欄へ自動補完。悩みゼロで1秒でコミットが完了します。</p>
+<h4>3-2. 【シナリオB】チームのコードレビューで「コミット履歴が分かりやすい！」と評価されたいとき</h4>
+<p>雑になりがちだったコミット履歴が、すべて標準プレフィックス＋丁寧な日本語要約で美しく整頓。プルリクエストのレビュー担当者も変更意図が一目で理解できるようになり、レビュー通過のスピードが爆発的に向上します。</p>
+<h4>3-3. 【シナリオC】英語が得意でないエンジニアや、学習中のプログラミング初学者のとき</h4>
+<p>「コミットメッセージは英語で格好良く書かなきゃ…」という英語コンプレックスから完全に解放。プレフィックスは世界的標準の英語、説明は分かりやすい日本語という完璧なハイブリッド構成で自信を持ってコミットできます。</p>
+<h3>4. よくある質問（Q&amp;A）</h3>
+<h4>Q1. 変更したソースコードが外部のAIサーバーに流出して社内情報漏洩になりませんか？</h4>
+<p><strong>A. 100%安全です。</strong> 解析は差分データの要約のみをブラウザローカル環境で処理し、コードデータが二次利用されたり学習データに再利用されることは絶対にありません。セキュリティ規約の厳しい企業でも安心してお使いいただけます。</p>
+<h4>Q2. チーム独自のコミット規約（例: <code>[JIRA-123]</code> などのチケット番号付与）に対応できますか？</h4>
+<p><strong>A. 簡単に設定できます。</strong> テンプレート設定画面から、「<code>[チケット番号] プレフィックス: 日本語説明</code>」といった独自フォーマットをあらかじめ定義しておけます。</p>
+<h4>Q3. GitHub以外のWebサービス（GitLabやBitbucket等）でも使えますか？</h4>
+<p><strong>A. 幅広く対応しています。</strong> GitHub, GitLab, BitbucketのWeb UI上のコミット画面やPR作成画面でシームレスに動作します。</p>
+<h4>Q4. 生成された日本語メッセージを少し手直しすることはできますか？</h4>
+<p><strong>A. もちろん可能です。</strong> 入力フォームに補完されたテキストは自由に編集・追記できますので、微調整して送信できます。</p>
+<h3>■ 使い方（簡単3ステップ）</h3>
+<ol><li>GitHub等のWeb画面でコードの変更差分（Diff）を確認。</li><li>コミット入力欄の横にある「AIメッセージ生成」ボタンを1タップ。</li><li>プレフィックス付きの美しい日本語コミットメッセージが自動セットされるので、そのままコミットボタンを押して完了！</li></ol>
+<h3>5. 完全ローカル処理：セキュリティと安全性の徹底保証</h3>
+<p>ソースコード差分の解析およびメッセージフォーマットの組み立ては、すべてお使いのブラウザ内部（ローカル環境）で行われます。機密コードが社外へ漏れる心配は一切ありません。</p>
+<h3>結論：コミットメッセージで悩む時間をゼロにし、本来のコーディングに集中しよう</h3>
+<p>「日本語コミットメッセージ作成」を導入すれば、もう入力欄の前で手が止まったり、雑なコミットメッセージで後悔することは二度とありません。 チームから信頼される洗練された開発ワークフローを、今すぐ手に入れませんか？ あなたのブラウザに、この「優秀な和の記録秘書」を迎えてみませんか？</p>
+      </div>
+
+      <div class="article-footer-cta">
+        <h2>日本語コミットメッセージ作成を試してみる</h2>
+        <p>インストールから14日間、全機能を無料でご利用いただけます。継続利用には単品¥1,980または全51個が使える全部セット¥3,980が必要です。</p>
+        <span class="price-card-cta price-card-cta--pending">Lemon Squeezy登録準備中</span>
+      </div>
+    </article>
+
+    <a class="article-back-link" href="../index.html#catalog">&larr; 道具一覧に戻る</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+      <p class="footer-note">本サイトは51個のChrome拡張機能の紹介と、Lemon Squeezyでの商品登録に向けた準備のために制作しています。掲載中の紹介文は元資料を要約整形したものです。価格・利用条件は変更される場合があります。</p>
+    </div>
+
+    <nav class="footer-links" aria-label="フッターナビゲーション">
+      <a href="../index.html#how">仕組み</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../index.html#catalog">道具一覧</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 和風ツール工房 — Lemon Squeezy登録準備中</p>
+  </div>
+</footer>
+
+</body>
+</html>
