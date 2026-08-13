@@ -731,3 +731,96 @@ p { margin: 0; }
   color: var(--color-ink-soft);
 }
 .article-back-link:hover { color: var(--color-accent-ink); }
+
+/* ==========================================================================
+   Legal / Contact pages (特商法・お問い合わせ)
+   ========================================================================== */
+.legal-page { padding-block: 1.5rem 2rem; }
+
+.legal-title { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+.legal-intro {
+  margin-top: 1.1rem;
+  color: var(--color-ink-soft);
+  font-size: 1.0625rem;
+  max-width: 60ch;
+}
+
+.legal-table {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--color-line);
+}
+.legal-row {
+  display: grid;
+  grid-template-columns: minmax(160px, 220px) 1fr;
+  gap: 1.5rem;
+  padding-block: 1.1rem;
+  border-bottom: 1px solid var(--color-line);
+}
+.legal-row dt {
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+.legal-row dd {
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: 0.9375rem;
+  line-height: 1.8;
+}
+.legal-row dd a { color: var(--color-accent-ink); }
+
+@media (max-width: 640px) {
+  .legal-row { grid-template-columns: 1fr; gap: 0.4rem; }
+}
+
+/* Contact form */
+.contact-form {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 560px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form-field label {
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+.form-required, .form-optional {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius);
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+.form-required { color: var(--color-accent-ink); background: var(--color-accent-soft); }
+.form-optional { color: var(--color-ink-soft); background: var(--color-surface); }
+
+.form-field input,
+.form-field textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  background: var(--color-surface-raised);
+  color: var(--color-ink);
+  resize: vertical;
+}
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+.contact-submit { align-self: flex-start; }
+.contact-note {
+  font-size: 0.8125rem;
+  color: var(--color-ink-soft);
+}

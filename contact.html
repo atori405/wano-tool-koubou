@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お問い合わせ — 和風ツール工房</title>
+<meta name="description" content="和風ツール工房へのお問い合わせフォームです。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%231F4E79%22/><circle cx=%2250%22 cy=%2250%22 r=%2224%22 fill=%22none%22 stroke=%22%23FDFCFA%22 stroke-width=%226%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </span>
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+    </a>
+
+    <nav class="site-nav" aria-label="サイト内ナビゲーション">
+      <a href="index.html#how">仕組み</a>
+      <a href="index.html#pricing">料金</a>
+      <a href="index.html#catalog">道具一覧</a>
+      <a href="index.html#faq">よくある質問</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="article-wrap">
+    <p class="breadcrumb"><a href="index.html#top">&larr; トップに戻る</a></p>
+
+    <div class="legal-page">
+      <h1 class="legal-title">お問い合わせ</h1>
+      <p class="legal-intro">拡張機能に関するご質問、ライセンスに関するお問い合わせなどは、以下のフォームまたはメールにてご連絡ください。</p>
+
+      <form class="contact-form" id="contact-form">
+        <div class="form-field">
+          <label for="cf-name">氏名 <span class="form-required">必須</span></label>
+          <input type="text" id="cf-name" name="name" required autocomplete="name">
+        </div>
+
+        <div class="form-field">
+          <label for="cf-email">メールアドレス <span class="form-required">必須</span></label>
+          <input type="email" id="cf-email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="form-field">
+          <label for="cf-subject">題名 <span class="form-required">必須</span></label>
+          <input type="text" id="cf-subject" name="subject" required>
+        </div>
+
+        <div class="form-field">
+          <label for="cf-message">メッセージ本文 <span class="form-optional">任意</span></label>
+          <textarea id="cf-message" name="message" rows="8"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary contact-submit">送信</button>
+        <p class="contact-note">「送信」を押すと、入力内容を差出人：<strong>info@ai-notes.net</strong>宛のメールとしてお使いのメールソフトで作成します。そのまま送信してください。</p>
+      </form>
+    </div>
+
+    <a class="article-back-link" href="index.html#top">&larr; トップに戻る</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">和風ツール<span class="brand-accent">工房</span></span>
+      <p class="footer-note">本サイトは51個のChrome拡張機能の紹介と、Lemon Squeezyでの商品登録に向けた準備のために制作しています。掲載中の紹介文は元資料を要約整形したものです。価格・利用条件は変更される場合があります。</p>
+    </div>
+
+    <nav class="footer-links" aria-label="フッターナビゲーション">
+      <a href="index.html#how">仕組み</a>
+      <a href="index.html#pricing">料金</a>
+      <a href="index.html#catalog">道具一覧</a>
+      <a href="index.html#faq">よくある質問</a>
+      <a href="contact.html">お問い合わせ</a>
+      <a href="tokushoho.html">特定商取引法に基づく表記</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 和風ツール工房 — Lemon Squeezy登録準備中</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const name = document.getElementById("cf-name").value.trim();
+    const email = document.getElementById("cf-email").value.trim();
+    const subject = document.getElementById("cf-subject").value.trim();
+    const message = document.getElementById("cf-message").value.trim();
+
+    const body = `お名前：${name}\nメールアドレス：${email}\n\n${message}`;
+    const mailto = `mailto:info@ai-notes.net?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
+  });
+</script>
+</body>
+</html>
