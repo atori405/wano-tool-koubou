@@ -58,6 +58,10 @@
         nameInput.focus();
         return;
       }
+      if (!email) {
+        emailInput.focus();
+        return;
+      }
 
       submitToGoogleForm(name, email, form.dataset.extLabel);
       triggerDownload(form.dataset.zipHref);
