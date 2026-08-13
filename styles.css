@@ -24,8 +24,53 @@
   --radius: 4px;
 }
 
-/* このサイトは白い和紙に藍一色という単一の世界観にコミットするため、
-   OSのダーク設定に関わらず常に本トークンを適用する */
+/* ダークモード（墨と藍）。手動トグルで data-theme を切り替える。
+   OS設定(prefers-color-scheme)はヒントとして尊重しつつ、
+   ユーザーの明示的な選択(data-theme)が常に優先される。 */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-bg: #16181C;
+    --color-surface: #1E2126;
+    --color-surface-raised: #262A30;
+    --color-ink: #EDEAE3;
+    --color-ink-soft: #A19B8F;
+    --color-line: #34383F;
+    --color-accent: #7FA8E0;
+    --color-accent-ink: #A9C6EE;
+    --color-accent-soft: #223349;
+    --color-warn-soft: #3A2E1D;
+    --color-warn-ink: #E0B57F;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #16181C;
+  --color-surface: #1E2126;
+  --color-surface-raised: #262A30;
+  --color-ink: #EDEAE3;
+  --color-ink-soft: #A19B8F;
+  --color-line: #34383F;
+  --color-accent: #7FA8E0;
+  --color-accent-ink: #A9C6EE;
+  --color-accent-soft: #223349;
+  --color-warn-soft: #3A2E1D;
+  --color-warn-ink: #E0B57F;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-bg: #FDFCFA;
+  --color-surface: #F4F2ED;
+  --color-surface-raised: #FFFFFF;
+  --color-ink: #1C1A17;
+  --color-ink-soft: #615B52;
+  --color-line: #E4E0D6;
+  --color-accent: #1F4E79;
+  --color-accent-ink: #16385C;
+  --color-accent-soft: #E4ECF3;
+  --color-warn-soft: #FBEFE4;
+  --color-warn-ink: #96551B;
+}
 
 /* ==========================================================================
    Reset / Base
@@ -141,6 +186,25 @@ p { margin: 0; }
   width: 200px;
 }
 .header-search input:focus { width: 260px; transition: width 0.2s ease; }
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  cursor: pointer;
+}
+.theme-toggle:hover { border-color: var(--color-ink-soft); }
+.theme-toggle .icon-moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: inline-flex; }
 
 @media (max-width: 860px) { .site-nav { display: none; } }
 
