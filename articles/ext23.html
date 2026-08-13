@@ -52,7 +52,15 @@
           <p class="article-cta-text"><strong>14日間無料</strong>ですべての機能をお試しいただけます。</p>
           <span class="article-cta-price">単品 ¥1,980 / 全部セット ¥3,980</span>
         </div>
-        <a class="article-download-link" href="../downloads/ext23.zip" download>&darr; 拡張機能ファイル一式をダウンロード(ext23.zip)</a>
+        <div class="download-gate">
+          <p class="download-gate-label">ダウンロードには、お名前のご入力をお願いしています（メールアドレスは任意です）。</p>
+          <form class="download-gate-form" data-ext-label="No.23 ふるさと納税ポータル一括シミュレーター (ext23)" data-zip-href="../downloads/ext23.zip">
+            <input type="text" data-field="name" placeholder="お名前" required>
+            <input type="email" data-field="email" placeholder="メールアドレス（任意）">
+            <button type="submit" class="btn btn-primary">送信してダウンロード(ext23.zip)</button>
+            <p class="download-gate-status" hidden>&darr; ダウンロードを開始しました。</p>
+          </form>
+        </div>
         <p class="article-download-note">zipを解凍し、Chromeの「拡張機能」→「デベロッパーモード」→「パッケージ化されていない拡張機能を読み込む」からフォルダを選択してください。</p>
       </div>
 
@@ -135,5 +143,6 @@
   </div>
 </footer>
 
+<script src="../assets/download-gate.js"></script>
 </body>
 </html>

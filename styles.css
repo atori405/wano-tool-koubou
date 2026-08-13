@@ -652,19 +652,53 @@ p { margin: 0; }
   white-space: nowrap;
 }
 
-.article-download-link {
-  display: inline-block;
-  margin-top: 1.25rem;
-  font-weight: 700;
-  font-size: 0.9375rem;
-  text-decoration: none;
-  color: var(--color-accent-ink);
-}
-.article-download-link:hover { text-decoration: underline; }
 .article-download-note {
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
   font-size: 0.8125rem;
   color: var(--color-ink-soft);
+}
+
+.download-gate {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+}
+.download-gate-label {
+  font-size: 0.875rem;
+  color: var(--color-ink-soft);
+  margin-bottom: 0.9rem;
+}
+.download-gate-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.download-gate-form input {
+  flex: 1 1 180px;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  background: var(--color-surface-raised);
+  color: var(--color-ink);
+}
+.download-gate-form input:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+.download-gate-form button {
+  flex: 1 1 100%;
+  font-size: 0.9375rem;
+  padding: 0.7rem 1rem;
+}
+.download-gate-status {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-accent-ink);
 }
 
 .article-body {
