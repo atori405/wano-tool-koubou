@@ -37,7 +37,7 @@ const EXTENSIONS = [
   { no: 18, id: "ext18", name: "定時退社リマインダー", category: "focus", tagline: "定時が近づくと画面を夕暮れ色に", description: "残業が常態化する前に、画面の色合いで自然に退社のタイミングを知らせる。" },
   { no: 19, id: "ext19", name: "読書集中ルーラー", category: "reading", tagline: "視線をガイドして長文を読み切る", description: "広告やサイドバーによる視覚的ノイズを抑え、紙の本のように集中して読める。" },
   { no: 20, id: "ext20", name: "一発企業データ検索", category: "focus", tagline: "右クリックで企業情報を即座に表示", description: "BtoB営業や企業研究で、複数タブを開かずその場で企業データを確認できる。" },
-  { no: 21, id: "ext21", name: "最安値ハンター", category: "shopping", tagline: "6大ECサイトを一瞬で価格比較", description: "商品名のコピペ往復をせず、主要ECサイトの価格を横断チェックして最安値を提示する。" },
+  { no: 21, id: "ext21", name: "最安値ハンター", category: "shopping", tagline: "楽天市場・Yahoo!ショッピングの最安値を自動取得、他4サイトは検索結果を一括表示", description: "商品名のコピペ往復をせず、楽天市場・Yahoo!ショッピングは公式APIで実際の最安値を、Amazon・価格.com・ヨドバシ.com・メルカリは検索結果を一括で開いて比較できる。" },
   { no: 22, id: "ext22", name: "メルカリかんたん出品補助", category: "shopping", tagline: "商品ページから出品文を自動生成", description: "ECサイトのスペック情報を抜き出し、メルカリの出品文を1タップで完成させる。" },
   { no: 23, id: "ext23", name: "ふるさと納税ポータル一括シミュレーター", category: "shopping", tagline: "控除上限額をポータル横断で試算", description: "年収や家族構成から控除上限を算出し、ポータルごとの返礼品を比較できる。" },
   { no: 24, id: "ext24", name: "サクラチェッカー連携", category: "shopping", tagline: "Amazonレビューの信頼度を1秒判定", description: "商品ページ上にやらせレビューの危険度をインライン表示し、失敗買いを防ぐ。" },
