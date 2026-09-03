@@ -45,7 +45,7 @@ const EXTENSIONS = [
   { no: 26, id: "ext26", name: "ポイント失効防止アラート", category: "shopping", tagline: "各社ポイントの有効期限を横断管理", description: "楽天ポイントやdポイントなどの失効が近づくと、事前に通知して消化を促す。" },
   { no: 27, id: "ext27", name: "領収書スクリーンショット自動保存", category: "focus", tagline: "領収書のスクショをワンクリック保存", description: "購入完了画面を高画質で自動保存・整理し、確定申告や経費精算の手間を減らす。" },
   { no: 28, id: "ext28", name: "出前最安比較", category: "shopping", tagline: "デリバリー3社の実質価格を1秒比較", description: "Uber Eats・出前館・Woltの送料や手数料、クーポンを加味して最安を判定する。" },
-  { no: 29, id: "ext29", name: "電子書籍・レンタルコミック最安サーチ", category: "shopping", tagline: "電子書籍の最安値を横断検索", description: "Kindleやシーモア、Rentaなどのセールとポイント還元をまとめて比較する。" },
+  { no: 29, id: "ext29", name: "電子書籍・レンタルコミック最安サーチ", category: "shopping", tagline: "電子書籍6ストアへの検索を1クリックで一括化", description: "Kindle・ピッコマ・コミックシーモアなど6ストアの検索結果ページをまとめて開ける。実際の価格・セールは各ストアでご確認を。" },
   { no: 30, id: "ext30", name: "日本の年中行事・ギフトカレンダー", category: "shopping", tagline: "年中行事とギフトのタイミングを通知", description: "お中元や敬老の日、誕生日を通知し、贈り物の相場と送付マナーも提案する。" },
   { no: 31, id: "ext31", name: "和風フォント着せ替え", category: "design", tagline: "サイトの文字を和のフォントに着せ替え", description: "明朝体・教科書体・毛筆風フォントへワンタップで切り替えられる。" },
   { no: 32, id: "ext32", name: "和風Webライティング＆文章構造チェッカー", category: "writing", tagline: "文章構造を可視化して読みやすさを底上げ", description: "見出し階層の乱れや冗長な言い回しを検出し、Web向けの構成に整える。" },
